@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML INTERVIEW QUESTIONS DAY3</title>
+</head>
+
+<body>
+    <h2>Write a code to insert an image</h2>
+    <Pre><font size="4">
+        <h3>Form Internet</h3>
+        &lt;img src="https://i.ytimg.com/vi/91cDH-kg9B4/maxresdefault.jpg" alt="Survival game" width="250" height="250">
+        <p><b>Example for Internet Source</b></p>
+        <img src="https://i.ytimg.com/vi/91cDH-kg9B4/maxresdefault.jpg" alt="Survival game" width="250" height="250">
+        <h3>Form Local</h3>
+        &lt;img src="./ark.jpg" alt="Survival game" width="250" height="250">
+        <p><b>Example for Local Source</b></p>
+        <img src="./ark.jpg" alt="Survival game" width="250" height="250">
+    </font>
+    </Pre>
+    <h2>Create a form contain input fields like name age email and contact</h2>
+    <pre><font size="4">
+        &lt;form>
+            &lt;label for="name">Name&lt;/label>
+            &lt;input type="name" name="name" id="name" required placeholder="Enter Your Name">&lt;br>
+            &lt;label for="age">Age&lt;/label>
+            &lt;input type="number" name="age" id="age" placeholder="Enter Your Age">&lt;br>
+            &lt;label for="email">Email&lt;/label>
+            &lt;input type="email" name="Email" id="email" required placeholder="Enter Your Email">&lt;br>
+            &lt;label for="num">Contact&lt;/label>
+            &lt;input type="tel" name="Contact Number" id="num" required placeholder="Enter Your Number">
+        &lt;/form></font>
+    </pre>
+    <p>Example :</p>
+    <form>
+        <label for="name">Name</label>
+        <input type="name" name="name" id="name" required placeholder="Enter Your Name"><br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="Enter Your Age"><br>
+        <label for="email">Email</label>
+        <input type="email" name="Email" id="email" required placeholder="Enter Your Email"><br>
+        <label for="num">Contact</label>
+        <input type="tel" name="Contact Number" id="num" required placeholder="Enter Your Number">
+    </form>
+
+    <h2>Create a table and explain how to colspan</h2>
+    <pre><font size="4">
+        &lt;table border cellpadding="20" >
+            &lt;tr >
+                &lt;td> &lt;/td>
+                &lt;td> &lt;/td>
+                &lt;td> &lt;/td>
+                &lt;td> &lt;/td>
+            &lt;/tr>
+            &lt;tr >
+                &lt;td> &lt;/td>                    (when I used the colspan Attribute in this line. 
+                &lt;td colspan="2"> &lt;/td>        This cell is Expands to another column. like: colspan="2".)
+                &lt;td> &lt;/td>
+            &lt;/tr>
+        &lt;/table>
+        </font>
+    </pre>
+    <p>Example :</p>
+    <pre>
+    <table border cellpadding="20" >
+        <tr >
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr >
+            <td> </td>
+            <td colspan="2">    </td>
+            <td> </td>
+        </tr>
+    </table></pre>
+    <h2>Create one form that contain name input, password input, 3 radio buttons(HTML,CSS,JS), 2
+        checkboxes(Male,Female) and one submit button . When you click on that button the value
+        should be shown in the URL</h2>
+    <pre><font size="4">
+        &lt;form action="./index2.html" target="_self" autocomplete="on">
+            &lt;label for="name1">Name&lt;/label>
+            &lt;input type="name" name="name" id="name1" required placeholder="Enter Your Name">&lt;br>&lt;br>
+            &lt;label for="pass">Password&lt;/label>
+            &lt;input type="password" name="password" id="pass" required placeholder="Enter Your Password">&lt;br>&lt;br>
+            &lt;input type="radio" name="lan1" id="l1">
+            &lt;label for="l1">HTML&lt;/label>&lt;br>
+            &lt;input type="radio" name="lan2" id="l2">
+            &lt;label for="l2">CSS&lt;/label>&lt;br>
+            &lt;input type="radio" name="lan3" id="l3">
+            &lt;label for="l3">JS&lt;/label>&lt;br>&lt;br>
+            &lt;label for="gen">Male&lt;/label>
+            &lt;input type="checkbox" name="Gender" id="gen">
+            &lt;label for="gen2">Female&lt;/label>
+            &lt;input type="checkbox" name="Gender" id="gen2">&lt;br>&lt;br>
+            &lt;input type="submit" value="submit">
+        &lt;/form></font>
+    </pre>
+    <p>Example :</p>
+    <form action="./index2.html" target="_self" autocomplete="on">
+        <label for="name1">Name</label>
+        <input type="name" name="name" id="name1" required placeholder="Enter Your Name"><br><br>
+        <label for="pass">Password</label>
+        <input type="password" name="password" id="pass" required placeholder="Enter Your Password"><br><br>
+        <input type="radio" name="lan1" id="l1">
+        <label for="l1">HTML</label><br>
+        <input type="radio" name="lan2" id="l2">
+        <label for="l2">CSS</label><br>
+        <input type="radio" name="lan3" id="l3">
+        <label for="l3">JS</label><br><br>
+        <label for="gen">Male</label>
+        <input type="checkbox" name="Gender" id="gen">
+        <label for="gen2">Female</label>
+        <input type="checkbox" name="Gender" id="gen2"><br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
